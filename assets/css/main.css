@@ -1,0 +1,314 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 1. Main Layout ================================= */
+* {
+  box-sizing: border-box; }
+
+html, body {
+  background: red;
+  width: 100%;
+  height: 100%;
+}
+
+.a {
+  background: yellow;
+}
+
+.b {
+  background: blue;
+}
+
+.c {
+  background: gray;
+}
+
+.d {
+  background: purple;
+}
+
+/*//////////////////////Layout 1//////////////////////*/
+
+/*MOBILE*/
+@media screen and (min-width: 0px) {
+
+  .layout-one .a {
+    width: 100%;
+    height: 20%;
+    transition: all .4s ease;
+
+  }
+
+  .layout-one .b,
+  .layout-one .c {
+    width: 100%;
+    height: 40%;
+    transition: all .4s ease-in-out;
+  }  
+}
+
+/*TABLET*/
+
+@media screen and (min-width: 767px) {
+
+  .layout-one .a {
+    transform: scaleX(1) scaleY(1);
+
+  }
+
+  .layout-one .b, 
+  .layout-one .c {
+    width: 50%;
+    height: 90%;
+    float: left;
+    transform: scaleX(1) scaleY(1);
+  }
+
+}
+
+/*DESKTOP*/
+
+@media screen and (min-width: 1024px) {
+
+  .layout-one .b {
+    width: 30%;
+    height: 90%;
+    float: left;
+  }
+
+  .layout-one .c {
+    width: 70%;
+    height: 90%;
+    float: left;
+  }
+}
+
+/*//////////////////////Layout 2//////////////////////*/
+
+/*MOBILE*/
+@media screen and (min-width: 0px) {
+
+  .layout-two .a {
+    width: 100%;
+    height: 50%;
+    transition: all 3s ease-in-out;
+  }
+
+  .layout-two .b,
+  .layout-two .c {
+    width: 50%;
+    height: 50%;
+    float: left;
+    transition: all 3s ease-in-out;
+
+  }
+
+}
+
+/*TABLET*/
+
+@media screen and (min-width: 767px) {
+
+  .layout-two .a {
+    width: 50%;
+    height: 100%;
+    float: left;
+/*    transform: skew(30deg); different effect when used on div. What is the difference? 
+*/
+  }
+
+  .layout-two .b,
+  .layout-two .c {
+    width: 50%;
+    height: 50%;
+    float: left;
+/*    transform: skew(30deg); different effect when used on div. What is the difference? 
+*/
+  }
+
+    transform: skew(30deg);
+
+
+}
+
+/*DESKTOP*/
+
+@media screen and (min-width: 1024px) {
+
+  .layout-two .a {
+    width: 30%;
+    height: 50%;
+    float: left;
+  }
+
+  .layout-two .b {
+    width: 70%;
+    height: 50%;
+    float: left;
+  }
+
+  .layout-two .c {
+    width: 100%;
+    height: 50%;
+    float: left;
+  }
+}
+
+/*//////////////////////Layout 3//////////////////////*/
+
+/*MOBILE*/
+@media screen and (min-width: 0px) {
+
+  .layout-three .a,
+  .layout-three .b, 
+  .layout-three .c,
+  .layout-three .d {
+    width: 50%;
+    height: 50%;
+    float: left;
+    transition: all 2s linear;
+  }
+
+}
+
+/*TABLET*/
+
+@media screen and (min-width: 767px) {
+
+  .layout-three .a {
+    width: 100%;
+    height: 50%;
+    transform: rotate(360deg);
+  }
+
+  .layout-three .b, 
+  .layout-three .c,
+  .layout-three .d {
+    width: 33.33%;
+    height: 50%;
+    float: left;
+    transform: rotate(360deg);
+
+  }
+}
+
+/*DESKTOP*/
+
+@media screen and (min-width: 1024px) {
+
+  .layout-three .a,
+  .layout-three .b,
+  .layout-three .c,
+  .layout-three .d {
+    width: 25%;
+    height: 100%;
+    float: left;
+    transform: rotate(360deg);
+
+  }
+
+}
+
+/*//////////////////////Layout 4//////////////////////*/
+
+/*MOBILE*/
+@media screen and (min-width: 0px) {
+
+  .layout-four .a {
+    float: left;
+    width: 30%;
+    height: 100%;
+    transition: all 4s ease;
+  }
+
+  .layout-four .b,
+  .layout-four .c,
+  .layout-four .d {
+    width: 70%;
+    height: 33.33%;
+    float: left;
+    transition: all 4s ease;
+
+  }
+
+}
+
+/*TABLET*/
+
+@media screen and (min-width: 767px) {
+
+  .layout-four .a {
+    width: 20%;
+    height: 50%;
+    float: left;
+    transform: rotate(360deg);
+
+  }
+
+  .layout-four .b {
+    width: 80%;
+    height: 50%;
+    float: left;
+    transform: rotate(360deg);
+
+
+  }
+
+  .layout-four .c,
+  .layout-four .d {
+    width: 50%;
+    height: 50%;
+    float: left;
+    transform: rotate(360deg);
+
+
+  }
+
+}
+
+/*DESKTOP*/
+
+@media screen and (min-width: 1024px) {
+
+  .layout-four .a {
+    width: 30%;
+    height: 50%;
+    float: left;
+  }
+
+  .layout-four .b {
+    width: 70%;
+    height: 50%;
+    float: left;
+  }
+
+  .layout-four .c {
+    width: 70%;
+    height: 50%;
+    float: left;
+  }
+
+  .layout-four .d {
+    width: 30%;
+    height: 50%;
+    float: left;
+  }
+
+}
+
+
+
+
+
+
+
